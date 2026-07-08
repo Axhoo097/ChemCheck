@@ -1,0 +1,83 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Build outputs
+dist/
+build/
+.next/
+out/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+!.env.example
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg
+*.egg-info/
+dist/
+.eggs/
+venv/
+env/
+.venv/
+pip-log.txt
+
+# Database
+*.sqlite
+*.db
+
+# Docker
+.docker/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V1
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE
+.vscode/settings.json
+.idea/
+*.swp
+*.swo
+
+# Testing
+coverage/
+.nyc_output/
+pytest_cache/
+.pytest_cache/
+
+# Prisma
+prisma/migrations/dev/
+
+# Uploads (keep folder, ignore contents)
+apps/api/uploads/*
+!apps/api/uploads/.gitkeep
+
+# Next.js
+.next/
+apps/web/.next/
+
+# TypeScript
+*.tsbuildinfo
+
+# SSL certs (never commit)
+nginx/ssl/
