@@ -17,9 +17,9 @@ This repo is being built phase by phase, sequentially, with tests shipped alongs
 | 0 | Project scaffolding — FastAPI + async SQLAlchemy + Alembic + Docker + test harness | ✅ Done |
 | 1 | Auth (JWT), Products & Ingredients CRUD, pagination, admin gating | ✅ Done |
 | 2 | Ingredient database seed (100 real ingredients), fuzzy search (`pg_trgm` + rapidfuzz), product↔ingredient linking with cascade/restrict rules | ✅ Done |
-| 3 | Deterministic rule-based risk scoring engine | ⏳ Planned |
-| 4 | Personalization from user sensitivities + reaction history | ⏳ Planned |
-| 5 | OCR label scanning + barcode lookup | ⏳ Planned |
+| 3 | Deterministic rule-based risk scoring engine |  ✅ Done |
+| 4 | Personalization from user sensitivities + reaction history |  ✅ Done |
+| 5 | OCR label scanning + barcode lookup |  ✅ Done |
 | 6 | Safer-alternative recommendations | ⏳ Planned |
 | 7 | Reaction tracking + reviews + pattern detection | ⏳ Planned |
 | 8 | Admin panel + regulatory alerts | ⏳ Planned |
