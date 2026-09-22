@@ -1,0 +1,6 @@
+{
+  "name": "ChemCheck",
+  "description": "Cosmetic and consumer product ingredient safety analyzer, risk scoring engine, and personalized sensitivity tracker.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
