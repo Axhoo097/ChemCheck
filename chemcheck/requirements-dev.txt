@@ -1,0 +1,5 @@
+-r requirements.txt
+
+# Only used in tests/services/test_barcode.py to generate real barcode
+# images for a genuine encode -> decode round-trip check.
+python-barcode==0.15.1

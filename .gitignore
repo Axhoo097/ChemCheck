@@ -1,83 +1,130 @@
-# Dependencies
-node_modules/
-.pnp
-.pnp.js
+ 
+# 1. Environment Variables & Secrets (CRITICAL: NEVER COMMIT TO GIT)
 
-# Build outputs
-dist/
-build/
-.next/
-out/
-
-# Environment variables
 .env
-.env.local
-.env.*.local
+.env.*
 !.env.example
+*.env
+*.pem
+*.key
+*.cert
+*.crt
+*.pfx
+*.p12
+credentials.json
+secrets/
 
-# Logs
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-
-# Python
+# ------------------------------------------------------------------------------
+# 2. Python & Bytecode Artifacts
+# ------------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
-*.egg
-*.egg-info/
+build/
+develop-eggs/
 dist/
+downloads/
+eggs/
 .eggs/
-venv/
-env/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ------------------------------------------------------------------------------
+# 3. Virtual Environments
+# ------------------------------------------------------------------------------
 .venv/
-pip-log.txt
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+.pylint/
 
-# Database
+# ------------------------------------------------------------------------------
+# 4. Testing, Code Coverage & Tooling Caches
+# ------------------------------------------------------------------------------
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.mypy_cache/
+.ruff_cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+
+# ------------------------------------------------------------------------------
+# 5. Local Databases, Persistent Volumes & Logs
+# ------------------------------------------------------------------------------
 *.sqlite
+*.sqlite3
 *.db
+*.log
+logs/
+*.log.*
+postgres_data/
+redis_data/
+*.rdb
 
-# Docker
-.docker/
+# ------------------------------------------------------------------------------
+# 6. File Uploads & Scratch Media
+# ------------------------------------------------------------------------------
+uploads/
+temp/
+tmp/
+scratch/
 
-# OS
+# ------------------------------------------------------------------------------
+# 7. IDE & Editor Files
+# ------------------------------------------------------------------------------
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+*~
+.gemini/
+.agents/
+
+# ------------------------------------------------------------------------------
+# 8. Operating System Specific
+# ------------------------------------------------------------------------------
 .DS_Store
 .DS_Store?
 ._*
-.Spotlight-V1
+.Spotlight-V100
 .Trashes
 ehthumbs.db
 Thumbs.db
+[Dd]esktop.ini
 
-# IDE
-.vscode/settings.json
-.idea/
-*.swp
-*.swo
-
-# Testing
-coverage/
-.nyc_output/
-pytest_cache/
-.pytest_cache/
-
-# Prisma
-prisma/migrations/dev/
-
-# Uploads (keep folder, ignore contents)
-apps/api/uploads/*
-!apps/api/uploads/.gitkeep
-
-# Next.js
+# ------------------------------------------------------------------------------
+# 9. Frontend / Node.js (for future web UI integration)
+# ------------------------------------------------------------------------------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
 .next/
-apps/web/.next/
-
-# TypeScript
-*.tsbuildinfo
-
-# SSL certs (never commit)
-nginx/ssl/
+out/
+.turbo/

@@ -1,0 +1,58 @@
+# ==============================================================================
+# ChemCheck .gitignore
+# ==============================================================================
+
+# Secrets & Environment Variables (NEVER COMMIT)
+.env
+.env.*
+!.env.example
+*.env
+*.pem
+*.key
+*.cert
+secrets/
+
+# Python & Virtual Environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.venv/
+venv/
+ENV/
+env/
+
+# Testing, Coverage & Caches
+.pytest_cache/
+.coverage
+.coverage.*
+htmlcov/
+.mypy_cache/
+.ruff_cache/
+
+# Local Databases, Volumes & Logs
+*.sqlite
+*.sqlite3
+*.db
+*.log
+logs/
+postgres_data/
+redis_data/
+*.rdb
+
+# Temporary & Uploads
+uploads/
+temp/
+tmp/
+scratch/
+
+# IDEs & System
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+[Dd]esktop.ini
+.gemini/
+.agents/
